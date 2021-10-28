@@ -1,0 +1,266 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Delights || Resort Hotels</title>
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="{% static 'hotel/fontawesome-free-5.7.2-web/css/all.css' %}" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="{% static 'hotel/css/styles.css' %}" />
+</head>
+
+<body>
+    <!-- nav button -->
+    <span class="nav-btn" id="nav-btn">
+      <i class="fas fa-bars"></i>
+    </span>
+    <!-- nav -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar-header">
+            <span class="nav-close" id="nav-close">
+          <i class="fas fa-times"></i>
+        </span>
+        </div>
+        <ul class="nav-items">
+            <li>
+                <a href="/onlinebooking/" class="nav-link">Book Reservation</a></li>
+            <li><a href="/services/" class="nav-link">services</a></li>
+            <li>
+                <a href="/employee/" class="nav-link ">employee</a></li>
+            <li><a href="/head/login/" class="nav-link ">admin</a></li>
+            
+        </ul>
+    </nav>
+    <!-- header -->
+    <header class="header ">
+        <div class="banner ">
+            <h3 class="banner-subtitle ">A beautiful combination of traditional grandeur and modern facilities</h3>
+            <h1 class="banner-title ">Delights </h1>
+            <!-- <a href="skills.html " class="banner-btn ">explore</a> -->
+        </div>
+    </header>
+    <div class="content-divider "></div>
+    <!-- skills section -->
+    <section class="skills clearfix ">
+        <!-- single skill -->
+        <article class="skill ">
+            <span class="skill-icon ">
+          <i class="fas fa-snowflake "></i>
+        </span>
+            <h3 class="skill-title ">super view</h3>
+            <!-- ten words -->
+            <p class="skill-text ">
+              Located on the hills of Horsley, Hotel Delights is one of the hotels able to satisfy the different needs of its guests with comfort and first rate services.
+            </p>
+        </article>
+        <!-- end of single skill -->
+        <!-- single skill -->
+        <article class="skill ">
+            <span class="skill-icon ">
+          <i class="far fa-bookmark "></i>
+        </span>
+            <h3 class="skill-title ">Best in class</h3>
+            <!-- ten words -->
+            <p class="skill-text ">
+              The hotel’s reception is open 24 hours a day and offers booking services for guided tours.
+            </p>
+        </article>
+        <!-- end of single skill -->
+        <!-- single skill -->
+        <article class="skill ">
+            <span class="skill-icon ">
+          <i class="fas fa-glass-cheers "></i>
+        </span>
+            <h3 class="skill-title ">Drinks</h3>
+            <!-- ten words -->
+            <p class="skill-text ">
+              The spacious rooms of this beautiful residence offer the possibility of enjoying a rich Bar on the splendid outdoor terrace.
+            </p>
+        </article>
+        <!-- end of single skill -->
+        <!-- single skill -->
+        <article class="skill ">
+            <span class="skill-icon ">
+          <i class="fas fa-medal "></i>
+        </span>
+            <h3 class="skill-title ">hotel of the year</h3>
+            <!-- ten words -->
+            <p class="skill-text ">
+                Due to our top class services we have been awarded The Hotel Of The Year yet again for the third time in a row.
+            </p>
+        </article>
+        <!-- end of single skill -->
+    </section>
+    <!--end of skills section -->
+    <!-- about -->
+    <section class="about ">
+        <div class="section-center clearfix ">
+            <article class="about-img ">
+                <div class="about-picture-container ">
+                    <img src="{% static 'hotel/images/about-bcg.jpeg' %} " alt="tea kettle " class="about-picture " />
+                </div>
+            </article>
+            <article class="about-info ">
+                <!-- section title -->
+                <div>
+                    <h3 class="section-subtitle ">about our</h3>
+                    <h2 class="section-title ">Stay House</h2>
+                </div>
+                <!-- section title -->
+                <p class="about-text ">
+                  At Hotel Delights you will be welcomed amongst olive trees, citron trees and magnolias, in gardens that hide exotic plants and in a wonderful outdoor pool with deck chairs; protected against the sun’s rays by big umbrellas you can enjoy a drink amongst the wisteria bushes, and find peace and tranquillity enjoying Banglores' mild climate.
+                </p>
+                <!-- <p class="about-text ">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus numquam rem eos vel consequuntur obcaecati?
+                </p> -->
+                <!-- <a href="about.html " class="main-btn ">learn more</a> -->
+            </article>
+        </div>
+    </section>
+    <!-- end of about -->
+    <!-- products -->
+    <section class="products ">
+        <div class="section-center clearfix ">
+            <!-- products info  -->
+            <article class="products-info ">
+                <!-- title -->
+                <div>
+                    <h3 class="section-subtitle ">check out</h3>
+                    <h2 class="section-title text-white ">our Rooms</h2>
+                </div>
+                <!-- end of title -->
+                <p class="product-text ">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, quae vitae! Natus sed fugiat id laudantium nemo, asperiores corporis amet!
+                </p>
+                <!-- <a href="products.html " class="main-btn ">inventory</a> -->
+            </article>
+            <!-- end of products info -->
+            <!-- products inventory -->
+            <article class="products-inventory clearfix ">
+                <!-- single product -->
+                <div class="product ">
+                    <img src="{% static 'hotel/images/product-1.jpeg' %} " alt="single product " class="product-img " />
+                    <h3 class="product-title ">Standard Rooms</h3>
+                 
+                    <h4 class="product-price ">&#x20B9;1000</h4>
+                </div>
+                <!--end of single product -->
+                <!-- single product -->
+                <div class="product ">
+                    <img src="{% static 'hotel/images/product-2.jpeg' %} " alt="single product " class="product-img " />
+                    <h3 class="product-title ">Delux Rooms</h3>
+                   
+                    <h4 class="product-price ">&#x20B9;1500</h4>
+                </div>
+                <!--end of single product -->
+                <!-- single product -->
+                <div class="product ">
+                    <img src="{% static 'hotel/images/product-3.jpeg' %} " alt="single product " class="product-img " />
+                    <h3 class="product-title ">premium Rooms</h3>
+                  
+                    <h4 class="product-price ">&#x20B9;2500</h4>
+                </div>
+                <!--end of single product -->
+            </article>
+            <!--end of  products inventory -->
+        </div>
+    </section>
+    <!-- end of  products -->
+    <!-- contact -->
+    <section class="contact ">
+        <div class="section-center clearfix ">
+            <!-- contact info -->
+            <article class="contact-info ">
+                <!-- contact item -->
+                <div class="contact-item ">
+                    <!-- contact text -->
+                    <h3 class="contact-title ">
+                        <span class="contact-icon ">
+                <i class="fas fa-location-arrow "></i> </span
+              >address
+            </h3>
+            <h3 class="contact-text ">
+              60/1, Coles Rd, Cleveland Town, Pulikeshi Nagar, Bengaluru, Karnataka 560001
+            </h3>
+          </div>
+          <!-- end of contact item -->
+          <!-- contact item -->
+          <div class="contact-item ">
+            <!-- contact text -->
+            <h3 class="contact-title ">
+              <span class="contact-icon "> <i class="fas fa-envelope "></i> </span
+              >email
+            </h3>
+            <h3 class="contact-text ">
+              hoteldelights@hostinger.in
+            </h3>
+          </div>
+          <!-- end of contact item -->
+          <!-- contact item -->
+          <div class="contact-item ">
+            <!-- contact text -->
+            <h3 class="contact-title ">
+              <span class="contact-icon ">
+                <i class="fas fa-phone-square "></i> </span
+              >telephone
+            </h3>
+            <h3 class="contact-text ">
+              + 123 456 789
+            </h3>
+          </div>
+          <!-- end of contact item -->
+        </article>
+        <!-- <article class="contact-form ">
+          <form
+            action="# "
+            method="POST "
+            class="form-group "
+          >
+            <input
+              type="text "
+              name="username "
+              placeholder="username "
+              maxlength="25 "
+              class="form-control "
+            />
+            <input
+              type="password "
+              name="password "
+              placeholder="password "
+              maxlength="25 "
+              class="form-control "
+            />
+            <input type ="submit " class="new-btn " value="Login "></input>
+            <!-- <input type ="submit " class="new-btn-2 " value="Register "></input> -->
+            
+            <!-- <button class="new-btn-2 " >Register</button> -->
+          <!-- <div class ="combination ">
+          <article class = "contact-info "></article>
+            <button class = "new-btn-2 "  href="/onlinebooking/ "> 
+                Book Rooms Online
+            </button> 
+        
+        </article>
+        </div> -->
+        <!-- end of contact info -->
+      </div>
+    </section>
+    <!-- end o fcontact -->
+    <footer class="footer ">
+      <div class="section-center ">
+        <div class="social-icons ">
+        
+        </div>
+        <p class="footer-text ">
+            <span>Copyright &copy; Delights 1995-2020</span>
+                        </p>
+                </div>
+                </footer>
+                <script src="{% static 'hotel/app.js' %} "></script>
+</body>
+
+</html>

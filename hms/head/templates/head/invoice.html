@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>DELIGHTS</h2>
+    <p>60/1, Coles Rd, Cleveland Town, Pulikeshi Nagar, Bengaluru, Karnataka 560001</p>
+
+    <h3>Bill id: EBN0010{{ billno }}</h3>
+       <h3>Name: {{ customer.firstname}} {{ customer.lastname }} </h3> 
+       <h3>Number: {{ customer.phoneno }} </h3> 
+       <h3>Vistied on: {{ customer.date_visited }}</h3>
+       
+    
+      <h3>Room Charges</h3>
+    <table>
+        <tr>
+            <th>Room Type</th>
+            <th>Days stayed</th>
+            <th>Price</th>
+            <th>Amount</th>
+        </tr>
+        <tr>
+            <td>{{ room.roomtype }} - {{ room.roomno }}</td>
+            <td>{{ customer.daysstayed }}</td>
+            <td>{{ room.price }}</td>
+            <td>{{ amount }}</td>
+        </tr>
+       
+    </table>
+    {% if services %}
+    <table>
+        <h3>Services-Charges</h3>
+        <tr>
+            <th>Service Name</th>
+            
+            <th>Price</th>
+            
+        </tr>
+        <tr>{% for i in services %}
+    
+            <td>{{ i.service_name }}</td>
+            
+            
+            
+            <td>{{ i.price }}</td>
+            
+           
+        </tr>
+        
+        {% endfor %}
+    {% endif %}
+      
+    </table>
+    <h3>Amount from services: {{ amt }}</h3>
+    <h3>Total amount: {{ tamt }}</h3>
+    <h4>GST: 18%</h4>
+    <h4>SSt: 12%</h4>
+    <h4>Service TAX: 13%</h4>
+    <h4>Total Amount to be paid: {{ ttamt }}</h4>
+
+</body>
+
+</html>
